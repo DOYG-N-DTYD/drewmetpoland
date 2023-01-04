@@ -22,16 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="Switchers">
-      <div class="bs1 switchEnglish">
-        <img src="../../images/dest/ico/usaFlag.jpg" alt="usaFlag" />
-      </div>
-      <div class="bs2"></div>
-      <div class="bs3 switchRussian">
-        <img src="../../images/dest/ico/rusFlag.jpg" alt="rusFlag" />
-      </div>
-    </div>
-    <header th:insert="SimpleContainers/header :: header"></header>
+    <div th:include="~{SimpleContainers/switchers :: language_swithcers}"></div>
+    <header th:include="~{SimpleContainers/header :: header}"></header>
 
     <div class="page-mid">
       <div class="left_side_page1"></div>
