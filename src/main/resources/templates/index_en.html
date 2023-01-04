@@ -31,8 +31,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div th:include="~{SimpleContainers/switchers :: language_swithcers}"></div>
-    <header th:include="~{SimpleContainers/header :: header}"></header>
+    <div th:insert="~{SimpleContainers/switchers :: language_swithcers}"></div>
+    <header th:insert="~{SimpleContainers/header :: header}"></header>
 
     <div class="top_mid_fb">
       <div class="top">
@@ -225,7 +225,7 @@
       <div class="FeedBack_460px"></div>
     </div>
 
-    <footer th:include="~{SimpleContainers/footer :: footer}"></footer>
+    <footer th:insert="~{SimpleContainers/footer :: footer}"></footer>
 
     <script type="text/javascript" src="js/click-carousel.js"></script>
     <script type="text/javascript">
