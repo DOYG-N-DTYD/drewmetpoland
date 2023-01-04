@@ -36,7 +36,7 @@
         <hr />
         <div class="center_page">
           <div
-            th:insert="SimpleContainers/page_ls_navigation:: page_ls_navigation"
+            th:include="~{SimpleContainers/page_ls_navigation:: page_ls_navigation}"
           ></div>
           <div class="content_page1">
             <div class="t_c_f">
@@ -92,7 +92,7 @@
       <div class="right_side_page1"></div>
     </div>
 
-    <footer th:insert="SimpleContainers/footer :: footer"></footer>
+    <footer th:include="~{SimpleContainers/footer :: footer}"></footer>
 
     <script src="js/app.min.js"></script>
 

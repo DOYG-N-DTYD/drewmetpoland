@@ -34,49 +34,9 @@
         </div>
         <hr />
         <div class="center_page">
-          <div class="navigate">
-            <div class="nav-link-1">
-              <div class="nav-link-1-left">
-                <p><strong> > </strong></p>
-              </div>
-              <div class="nav-link-1-right">
-                <a href="page1.html"><p>Edged lumber</p></a>
-              </div>
-            </div>
-            <div class="nav-link-2">
-              <div class="nav-link-2-left">
-                <p><strong> > </strong></p>
-              </div>
-              <div class="nav-link-2-right">
-                <a href="page2.html"><p>Unedged lumber</p></a>
-              </div>
-            </div>
-            <div class="nav-link-3">
-              <div class="nav-link-3-left">
-                <p><strong> > </strong></p>
-              </div>
-              <div class="nav-link-3-right">
-                <a href="page3.html"><p>A pallet blank</p></a>
-              </div>
-            </div>
-            <div class="nav-link-4">
-              <div class="nav-link-4-left">
-                <p><strong> > </strong></p>
-              </div>
-              <div class="nav-link-4-right">
-                <a href="page4.html"><p>Split firewood</p></a>
-              </div>
-            </div>
-            <div class="nav-link-5">
-              <div class="nav-link-5-left">
-                <p><strong> > </strong></p>
-              </div>
-              <div class="nav-link-5-right">
-                <a href="page5.html"><p>Slab / Sawdust</p></a>
-              </div>
-            </div>
-          </div>
-
+          <div
+          th:include="~{SimpleContainers/page_ls_navigation:: page_ls_navigation}"
+        ></div>
           <div class="content_page1">
             <div class="text_content">
               <p>
@@ -147,7 +107,7 @@
 
       <div class="right_side_page1"></div>
     </div>
-    <footer th:insert="SimpleContainers/footer :: footer"></footer>
+    <footer th:include="~{SimpleContainers/footer :: footer}"></footer>
     <script
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
