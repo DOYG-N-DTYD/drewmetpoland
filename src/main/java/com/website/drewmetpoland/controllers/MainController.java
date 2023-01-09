@@ -10,7 +10,7 @@ public class MainController {
 
 	@GetMapping("/")
 	public String home(Model model) {
-		model.addAttribute("title", "DrewMet");
+		model.addAttribute("title", "DrewMet !!!!!!!!!!!");
 		return "index_en";
 	}
     @GetMapping("/page_products")
