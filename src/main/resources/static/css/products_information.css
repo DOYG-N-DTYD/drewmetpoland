@@ -1,0 +1,292 @@
+.left_side_page1,
+.right_side_page1 {
+  height: 400px
+}
+@media screen and (max-width:749px) {
+  .left_side_page1,
+  .right_side_page1 {
+    display: none
+  }
+}
+.cp_title {
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.4;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 42px;
+    color: #d5b45b;
+    line-height: 1em;
+    font-weight: 600;
+    cursor: default;
+    -webkit-text-stroke: 1px #353535;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+  }
+  @media screen and (max-width:459px) {
+    .cp_title {
+      display: none
+    }
+  }
+.cp_title {
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.4;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 42px;
+    color: #d5b45b;
+    line-height: 1em;
+    font-weight: 600;
+    cursor: default;
+    -webkit-text-stroke: 1px #353535;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+  }
+  @media screen and (max-width:459px) {
+    .cp_title {
+      display: none
+    }
+  }
+  .center_page {
+    padding: 30px;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 50px
+  }
+  @media screen and (min-width:749px) {
+    .center_page {
+      -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr
+    }
+  }
+  @media screen and (min-width:820px) {
+    .center_page {
+      padding: 30px
+    }
+  }
+  @media screen and (max-width:819px) {
+    .center_page {
+      padding: 15px
+    }
+  }
+  .center_page {
+    padding: 30px;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 50px
+  }
+  @media screen and (min-width:749px) {
+    .center_page {
+      -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr
+    }
+  }
+  @media screen and (min-width:820px) {
+    .center_page {
+      padding: 30px
+    }
+  }
+  @media screen and (max-width:819px) {
+    .center_page {
+      padding: 15px
+    }
+  }
+.content_page1 p {
+    text-indent: 3em;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8em
+  }
+  .text_content text {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: 'Open Sans',sans-serif;
+    text-transform: uppercase
+  }
+
+  .t_c_ {
+    display: -ms-grid;
+    display: grid
+  }
+  @media screen and (max-width:965px) {
+    .t_c_ {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr
+    }
+  }
+  @media screen and (min-width:966px) {
+    .t_c_ {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr
+    }
+  }
+  .t_c_l {
+    padding: 10px
+  }
+  .t_c_l img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .t_c_r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-indent: 3em;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8em
+  }
+  .t_c_f {
+    display: -ms-grid;
+    display: grid
+  }
+  @media screen and (max-width:965px) {
+    .t_c_f {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr
+    }
+  }
+  @media screen and (min-width:966px) {
+    .t_c_f {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr
+    }
+  }
+  .t_c_fl img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .t_c_ftb ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+
+  .t_c_ {
+    display: -ms-grid;
+    display: grid
+  }
+  @media screen and (max-width:965px) {
+    .t_c_ {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr
+    }
+  }
+  @media screen and (min-width:966px) {
+    .t_c_ {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr
+    }
+  }
+  .t_c_l {
+    padding: 10px
+  }
+  .t_c_l img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .t_c_r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-indent: 3em;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8em
+  }
+
+  .t_c_f {
+    display: -ms-grid;
+    display: grid
+  }
+  @media screen and (max-width:965px) {
+    .t_c_f {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr
+    }
+  }
+  @media screen and (min-width:966px) {
+    .t_c_f {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr
+    }
+  }
+  .t_c_fl img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .t_c_ftb ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+
+  .page-mid {
+    display: -ms-grid;
+    display: grid
+  }
+  @media screen and (min-width:749px) {
+    .page-mid {
+      -ms-grid-columns: 1fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr
+    }
+  }

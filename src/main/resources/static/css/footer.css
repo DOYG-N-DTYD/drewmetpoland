@@ -15,8 +15,6 @@ ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
 }
 
 .bottom ul li:hover {
@@ -50,7 +48,6 @@ ul {
     background-color: #28262a;
     text-align: center;
     font-size: 10px;
-    position: fixed;
     bottom: 0;
 }
 
