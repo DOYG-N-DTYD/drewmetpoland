@@ -2,17 +2,18 @@
 <html lang="en">
   <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <link rel="stylesheet" th:href="@{/css/header.css}" />
-  <link rel="stylesheet" th:href="@{/css/footer.css}" />
+  <!-- <link rel="stylesheet" th:href="@{/css/header.css}" />
+  <link rel="stylesheet" th:href="@{/css/footer.css}" /> -->
+  <link rel="stylesheet" th:href="@{/css/page_ls_navigation.css}" />
 </head>
 
 <body>
   <!-- <div th:insert="~{SimpleContainers/switchers :: language_swithcers}"></div> -->
   <!-- <header th:insert="~{SimpleContainers/header :: header}"></header> -->
 
-  <header th:insert="~{SimpleContainers/header}"></header>
-  <footer th:insert="~{SimpleContainers/footer}"></footer>
-
+  <!-- <header th:insert="~{SimpleContainers/header}"></header>
+  <footer th:insert="~{SimpleContainers/footer}"></footer> -->
+  <div th:insert="~{SimpleContainers/page_ls_navigation}"></div>
   <!-- <div th:insert="SimpleContainers/footer"></div> -->
   <!-- <div th:insert="SimpleContainers/page_ls_navigation"></div> -->
 </body>
