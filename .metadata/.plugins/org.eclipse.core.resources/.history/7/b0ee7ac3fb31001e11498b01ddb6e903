@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+header {
+  background: white;
+  text-align: center; }
+
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out; }
+
+.logo {
+  background-color: #28262a;
+  color: #d5b45b;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  padding-top: 30px; }
+
+.NameLastN {
+  background-color: #28262a;
+  color: #d5b45b;
+  padding-bottom: 30px;
+  font-size: 1.3em; }
+
+.logo:hover, .NameLastN:hover {
+  color: #dfb74b; }
+
+nav {
+  display: table;
+  margin: 0 auto; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (min-width: 750px) {
+  .mobile_menu {
+    display: none; } }
+
+.mobile_menu li {
+  text-align: center; }
+
+.topmenu {
+  width: auto; }
+  @media screen and (max-width: 749px) {
+    .topmenu {
+      display: none; } }
+
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.topmenu > li {
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif; }
+
+.topmenu > li > a, .mobile_menu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #404040;
+  padding: 15px 30px; }
+
+.topmenu, .mobile_menu {
+  cursor: pointer; }
+  .topmenu li a:hover, .mobile_menu li a:hover {
+    color: #D5B45B; }
+
+.submenu-link:after {
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px; }
+
+.submenu {
+  background: #28262a;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out; }
+
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.submenu li:last-child a {
+  border-bottom: none; }
+
+.topmenu > li:hover .submenu, .mobile_menu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1); }
+
+  .title {
+    margin-bottom: 75px;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.4;
+    position: relative;
+    font-size: 62px;
+    color: #d5b45b;
+    line-height: 1em;
+    font-weight: 600;
+    cursor: default;
+    -webkit-text-stroke: 1px #353535;
+    transition: all 0.2s ease-in-out;
+    transition: 1s; }
+    @media screen and (min-width: 757px) and (max-width: 999px) {
+      .title {
+        text-align: center;
+        font-size: 52px; } }
+    @media screen and (max-width: 756px) {
+      .title {
+        display: none; } }
+  

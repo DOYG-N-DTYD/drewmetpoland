@@ -1,0 +1,10 @@
+<!DOCTYOE HTML>
+<html>
+	<head>
+	<title th:text="${title}"/>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<p th:text = "'Privet, '+ ${title}+'!'"/>
+	</body>
+</html>

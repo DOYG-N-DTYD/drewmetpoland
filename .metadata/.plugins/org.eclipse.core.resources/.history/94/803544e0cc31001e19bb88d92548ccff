@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>TEST PAGE</title>
+	<link rel="stylesheet" th:href="@{/css/app.min.css}" />
+  </head>
+  <body>
+    <h1>TEST PAGE</h1>
+    <div th:insert="SimpleContainers/header"></div>
+  </body>
+</html>

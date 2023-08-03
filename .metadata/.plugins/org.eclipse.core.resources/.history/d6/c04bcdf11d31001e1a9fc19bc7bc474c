@@ -1,0 +1,10 @@
+package com.drewmetpoland.drewmet;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class testController {
+	public String testPage() {
+		return "testPage";
+	}
+}

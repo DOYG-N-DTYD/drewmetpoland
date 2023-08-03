@@ -1,0 +1,40 @@
+<div th:fragment="header">
+       <link rel="stylesheet" th:href="@{/css/app.min.css}" />
+  <a href="/" class="logo"><h1>DrewMet</h1></a>
+  <a href="/" class="NameLastN">ANTON PAULAU</a>
+  <nav>
+    <ul class="topmenu">
+      <li><a href="/">Home</a></li>
+      <li>
+        <a href="">Information</a>
+        <ul class="submenu">
+          <li><a href="/page_orderBuy">Payment and delivery</a></li>
+          <li><a href="/page_about">About us</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/page_products" class="submenu-link">Lumber</a>
+        <ul class="submenu">
+          <li><a href="/page1">Edged lumber</a></li>
+          <li><a href="/page2">Unedged lumber</a></li>
+          <li><a href="/page3">A pallet blank</a></li>
+          <li><a href="/page4">Split firewood</a></li>
+          <li><a href="/page5">Slab/Sawdust</a></li>
+        </ul>
+      </li>
+      <li><a href="/page_products">Gallery</a></li>
+      <li><a href="/page_contact">Contacts</a></li>
+    </ul>
+    <ul class="mobile_menu">
+      <li><a href="/page1">Edged lumber</a></li>
+      <li><a href="/page2">Unedged lumber</a></li>
+      <li><a href="/page3">A pallet blank</a></li>
+      <li><a href="/page4">Split firewood</a></li>
+      <li><a href="/page5">Slab / Sawdust</a></li>
+      <li><a href="/page_contact">Contacts</a></li>
+      <li><a href="/page_orderBuy">Payment and delivery</a></li>
+      <li><a href="/page_products" class="submenu-link">Gallery</a></li>
+      <li><a href="/page_about">About us</a></li>
+    </ul>
+  </nav>
+</div>
