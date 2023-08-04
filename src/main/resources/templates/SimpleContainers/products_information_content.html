@@ -1,7 +1,24 @@
-<div th:fragment="products_information_content">
+<th:block th:fragment="default(route)">
     <!-- <div th:insert="~{SimpleContainers/edged_lumber_content}"></div> -->
     <!-- <div th:insert="~{SimpleContainers/unedged_lumber_content}"></div> -->
     <!-- <div th:insert="~{SimpleContainers/pallet_blank_content}"></div> -->
     <!-- <div th:insert="~{SimpleContainers/split_firewood_content}"></div> -->
     <!-- <div th:insert="~{SimpleContainers/slab_sawdust_content}"></div> -->
-</div>
+    <th:block th:switch="${route}">
+        <div th:case="edged_lumber_content">
+            <th:block th:insert="~{SimpleContainers/edged_lumber_content}"></th>
+        </div>
+        <div th:case="unedged_lumber_content">
+            <th:block th:insert="~{SimpleContainers/unedged_lumber_content}"></th>
+        </div>
+        <div th:case="pallet_blank_content">
+            <th:block th:insert="~{SimpleContainers/pallet_blank_content}"></th>
+        </div>
+        <div th:case="split_firewood_content">
+            <th:block th:insert="~{SimpleContainers/split_firewood_content}"></th>
+        </div>
+        <div th:case="slab_sawdust_content">
+            <th:block th:insert="~{SimpleContainers/slab_sawdust_content}"></th>
+        </div>
+    </th>
+</th:block>
