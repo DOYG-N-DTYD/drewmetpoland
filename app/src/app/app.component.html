@@ -1,0 +1,24 @@
+<!-- <div>app.component.html</div>
+
+<div class="navigation">
+  <li> <a routerLink="/">main</a></li> 
+  <li><a routerLink="/test">test </a></li>
+</div>
+
+<div class="app-container">
+  <p>next router-outlet -></p>
+  <router-outlet></router-outlet>
+</div>
+
+<h1>#######################################################</h1> -->
+<h1>{{'HOME.TITLE' | translate}}</h1>
+<button (click)="translate.use('rus')">{{'BUTTON.LANG.RU' | translate}}</button>
+<button (click)="translate.use('eng')">{{'BUTTON.LANG.EN' | translate}}</button>
+<input type="text" (change)="onChangeName($event)">
+<p>{{'HOME.WELCOME' | translate: {name: nameComponent} }}</p>
+
+<app-header></app-header>
+<!-- <router-outlet></router-outlet> -->
+<app-feed-back-form></app-feed-back-form>
+<!-- <app-central></app-central> -->
+<app-footer></app-footer>
