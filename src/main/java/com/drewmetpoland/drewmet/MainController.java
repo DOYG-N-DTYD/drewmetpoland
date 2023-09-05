@@ -1,10 +1,12 @@
 package com.drewmetpoland.drewmet;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -72,10 +74,12 @@ public class MainController {
 	    modelAndView.setViewName("page5");
 	    return modelAndView;
 	}
+
     @RequestMapping("/test")
 	public ModelAndView test(Model model) {
 		ModelAndView modelAndView = new ModelAndView();
 	    modelAndView.setViewName("test");
+
 	    return modelAndView;
 	}
 	// @PostMapping("/test")
@@ -83,4 +87,6 @@ public class MainController {
 	// 	Post post = new Post(testData);
 	// 	return testData;
 	// }
+
+
 }

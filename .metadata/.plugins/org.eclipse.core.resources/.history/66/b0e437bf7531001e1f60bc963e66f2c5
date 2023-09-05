@@ -32,7 +32,7 @@
   </head>
   <body>
     <div th:insert="~{SimpleContainers/switchers :: language_swithcers}"></div>
-    <header th:insert="~{SimpleContainers/header :: header}"></header>
+    <header th:insert="~{SimpleContainers/header :: header_layout}"></header>
 
     <div class="top_mid_fb">
       <div class="top">
