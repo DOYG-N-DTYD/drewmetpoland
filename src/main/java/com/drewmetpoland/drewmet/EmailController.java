@@ -1,11 +1,6 @@
 package com.drewmetpoland.drewmet;
 
-
-import com.drewmetpoland.drewmet.EmailService;
-
 import jakarta.mail.MessagingException;
-
-import java.io.FileNotFoundException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,18 +10,21 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.mail.MailException;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
-@RequestMapping
+@RequestMapping("/simple-email")
 public class EmailController {
     private static final Logger LOG = LoggerFactory.getLogger(EmailController.class);
 
     @Autowired
     EmailService emailService;
 
-    @GetMapping(value = "/simple-email/{user-email}")
+    @CrossOrigin
+    @RequestMapping(method = RequestMethod.PUT, path = "/{user-email}")
+
     public @ResponseBody ResponseEntity sendEmail(@PathVariable("user-email") String email) throws MessagingException {
-        try {
+    	System.out.println("API API");
+    	try {
+        	System.out.println(email + " !!!! ");
             emailService.sendEmail(email, "FROM SPRING", "This is a welcome email for your!!");
         } catch (MailException mailException) {
             LOG.error("Error while sending out email..{}", mailException.getStackTrace());

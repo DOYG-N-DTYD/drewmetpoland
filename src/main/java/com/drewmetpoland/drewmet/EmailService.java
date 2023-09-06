@@ -9,17 +9,18 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 
-
 @Service
-public class EmailService {
+public class EmailService{
+  
       @Autowired
       private JavaMailSender mailSender;
-
+      
       public void sendEmail(String toAddress, String subject, String message) throws MessagingException{ //String to, String subject, String body
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         //simpleMailMessage.setFrom("SPRING BOOT");
