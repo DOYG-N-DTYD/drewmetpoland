@@ -27,11 +27,8 @@ public class EmailServiceImpl implements EmailServiceInterface {
 
 	@Override
 	public void send(String from, String to, String title, String body) {
-		// TODO Auto-generated method stub
 		MimeMessage message = this.mailSender.createMimeMessage();
 		MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(message);
-
-		System.out.println("++++++++\n" + from + "\n" + to + "\n" + title + "\n" + body + "\n" + "++++++++\n");
 
 		try {
 			if (from != null) {

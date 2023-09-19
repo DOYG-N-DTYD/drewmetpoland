@@ -20,18 +20,13 @@ public class EmailController {
 
 	@CrossOrigin
 	@RequestMapping(method = RequestMethod.PUT, path = "/{user-email}")
-
 	public @ResponseBody ResponseEntity sendEmail(@PathVariable("user-email") String email) throws MessagingException {
-		System.out.println("API API");
 		try {
-			System.out.println(email + " !!!! ");
 			emailService.send(email, email, "test TITLE", "test BODY"); // from, to, title, body
 		} catch (MailException mailException) {
 			LOG.error("Error while sending out email..{}", mailException.getStackTrace());
-			System.out.println("ERROR");
 			return new ResponseEntity<>("Unable to send email", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		System.out.println("Please check your inbox");
 		return new ResponseEntity<>("Please check your inbox", HttpStatus.OK);
 	}
 }
