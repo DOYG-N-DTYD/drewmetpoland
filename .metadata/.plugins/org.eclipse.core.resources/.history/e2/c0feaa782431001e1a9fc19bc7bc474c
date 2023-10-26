@@ -1,2 +1,0 @@
-<th:block th:fragment="default(route)">
-</th:block>

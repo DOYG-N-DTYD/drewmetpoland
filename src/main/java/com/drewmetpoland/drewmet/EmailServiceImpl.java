@@ -20,6 +20,10 @@ public class EmailServiceImpl implements EmailServiceInterface {
 
 	private JavaMailSender mailSender;
 
+	//@Autowired
+	public EmailServiceImpl() {	
+	}
+	
 	@Autowired
 	public EmailServiceImpl(JavaMailSender mailSender) {
 		this.mailSender = mailSender;
